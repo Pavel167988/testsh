@@ -1,0 +1,116 @@
+    1  ls -la
+    2  cd Tasks/05.Ansible/
+    3  nano host.yaml
+    4  vim ansible.cfg
+    5  nano ansible.cfg
+    6  mkdir -p group_vars/all_workers
+    7  cd group_vars/all_workers/
+    8  nano vars.yaml
+    9  ssh root@192.168.202.27
+   10  ansible -i host.yaml -u root --graph
+   11  ansible -i host.yaml -u root -graph
+   12  ansible-inventory -i host.yaml -u root --graph
+   13  ansible-inventory -i host.yaml --graph
+   14  cd ..
+   15  ansible-inventory -i host.yaml --graph
+   16  ansible-inventory -i host.yaml -u root --ask-pass
+   17  ansible-i host.yaml -u root --ask-pass
+   18  ansible -i host.yaml -u root --ask-pass
+   19  ansible -i host.yaml -m ping all_workers -u root
+   20  ssh-copy-id jump_as@178.124.206.53
+   21  ssh-copy-id jump_sa@178.124.206.53
+   22  ssh root@178.124.206.53
+   23  ssh jump_sa@178.124.206.53
+   24  ssh root@192.168.202.27
+   25  ssh root@192.168.202.27  -o ProxyCommand="ssh -W %h:%p -q jump_sa@178.124.206.53"
+   26  ls -la
+   27  cd group_vars/
+   28  ls -la
+   29  cd all_workers/
+   30  ls -la
+   31  vim vars.yaml 
+   32  ssh root@192.168.202.27
+   33  sudo apt install sshpass
+   34  ssh root@192.168.202.27
+   35  ssh root@192.168.202.27  -o ProxyCommand="ssh -W %h:%p -q jump_sa@178.124.206.53"
+   36  ansible --version
+   37  nano /etc/ansible/ansible.cfg 
+   38  sudo nano /etc/ansible/ansible.cfg 
+   39  sudo rm /etc/ansible/ansible.cfg 
+   40  sudo nano /etc/ansible/ansible.cfg 
+   41  cd ..
+   42  ssh root@192.168.202.27
+   43  ssh root@192.168.202.28
+   44  ansible -i host.yaml -m ping all_workers -u root
+   45  ansible -i host.yaml -m ping all_workers -u root --ask-pass
+   46  ls -la
+   47  cd group_vars/
+   48  cd all_workers/
+   49  ls -la
+   50  vim vars.yaml 
+   51  nano vars.yaml 
+   52  ssh root@192.168.202.27
+   53  cd ..
+   54  ls -la
+   55  nano ansible.cfg 
+   56  nano host.yaml 
+   57  ansible-inventory -i host.yaml --host=host27
+   58  nano vars.yaml 
+   59  nano group_vars/all_workers/vars.yaml 
+   60  ansible-inventory -i host.yaml --host=host27
+   61  ssh root@192.168.202.27
+   62  ansible-inventory -i host.yaml --host=host27
+   63  ansible-inventory -i host.yaml --host=host28
+   64  ansible -i inv.yaml -m ping all_workers_sa --ask-pass
+   65  ansible -i host.yaml -m ping all_workers_sa --ask-pass
+   66  ansible -i host.yaml -m ping all_workers --ask-pass
+   67  ansible -i host.yaml -m authorized_key -a "key=\"{{lookup('file','~/.ssh/id_rsa.pub')}}\" user=root" all_workers -u root --ask-pass
+   68  ssh root@192.168.202.27
+   69  nano play.yaml
+   70  ansible-playbook play.yaml 
+   71  nano play.yaml 
+   72  ansible-playbook play.yaml 
+   73  nano play.yaml 
+   74  ansible-playbook play.yaml 
+   75  nano play.yaml 
+   76  ansible-playbook play.yaml 
+   77  nano play.yaml 
+   78  ansible-playbook play.yaml 
+   79  nano play.yaml 
+   80  ansible-playbook play.yaml 
+   81  nano play.yaml 
+   82  ansible-playbook play.yaml 
+   83  nano play.yaml 
+   84  ansible-playbook play.yaml 
+   85  nano play.yaml 
+   86  ansible-playbook play.yaml 
+   87  nano play.yaml 
+   88  ansible-playbook play.yaml 
+   89  nano play.yaml 
+   90  ansible-playbook play.yaml 
+   91  nano play.yaml 
+   92  ansible-playbook play.yaml 
+   93  nano play.yaml 
+   94  ansible-playbook play.yaml 
+   95  nano play.yaml 
+   96  ansible-playbook play.yaml 
+   97  nano play.yaml 
+   98  ansible-playbook play.yaml 
+   99  nano play.yaml 
+  100  ansible-playbook play.yaml 
+  101  nano play.yaml 
+  102  ansible-playbook play.yaml 
+  103  nano play.yaml 
+  104  ansible-playbook play.yaml 
+  105  nano play.yaml \
+  106  nano play.yaml 
+  107  ansible-playbook play.yaml 
+  108  nano play.yaml 
+  109  ansible-playbook play.yaml 
+  110  nano play.yaml 
+  111  ansible-playbook play.yaml 
+  112  nano play.yaml 
+  113  VBoxManage sharedfolder add "Ubuntu Ansible" --name sharename --hostpath "C:\123"
+  114  sudo apt install virtualbox
+  115  VBoxManage sharedfolder add "Ubuntu Ansible" --name sharename --hostpath "C:\123"
+  116  history > history.txt
